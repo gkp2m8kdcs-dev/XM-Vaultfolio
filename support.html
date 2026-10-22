@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — XM Vaultfolio</title>
+<meta name="description" content="Support for XM Vaultfolio. Get help with setup, transactions, budgets, portfolio tracking, receipts and data. We reply within 1-2 business days.">
+<meta name="theme-color" content="#0A0A0F">
+<link rel="canonical" href="https://xmvaultfolio.app/support.html">
+<style>
+  :root{
+    --bg:#0A0A0F;
+    --surface:rgba(255,255,255,.04);
+    --border:rgba(255,255,255,.09);
+    --gold:#EAC74F;
+    --gold-2:#D98F2B;
+    --text:#FFFFFF;
+    --muted:rgba(255,255,255,.66);
+    --faint:rgba(255,255,255,.42);
+    --radius:20px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;line-height:1.7;
+  }
+  a{color:var(--gold);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:860px;margin:0 auto;padding:0 24px}
+  header{
+    position:sticky;top:0;z-index:50;
+    backdrop-filter:saturate(160%) blur(14px);
+    background:rgba(10,10,15,.82);border-bottom:1px solid var(--border);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:62px;gap:16px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--text)}
+  .brand-mark{
+    width:32px;height:32px;border-radius:50%;
+    background:linear-gradient(135deg,var(--gold),var(--gold-2));
+    display:grid;place-items:center;color:#0A0A0F;font-size:15px;
+  }
+  .nav-links{display:flex;align-items:center;gap:20px;font-size:14px}
+  .nav-links a{color:var(--muted)}
+  .nav-links a:hover{color:var(--gold);text-decoration:none}
+  @media(max-width:640px){.nav-links a.nav-hide{display:none}}
+  .hero{padding:64px 0 30px;border-bottom:1px solid var(--border)}
+  h1{font-size:clamp(30px,5.4vw,44px);letter-spacing:-.02em;font-weight:800;line-height:1.15}
+  .lede{color:var(--muted);margin-top:16px;font-size:16px}
+  .stamp{margin-top:22px;display:inline-block;font-size:12.5px;color:var(--faint);border:1px solid var(--border);background:var(--surface);padding:6px 13px;border-radius:999px}
+  section{padding:36px 0;border-bottom:1px solid var(--border)}
+  section:last-of-type{border-bottom:0}
+  h2{font-size:clamp(19px,3vw,23px);font-weight:750;letter-spacing:-.01em;margin-bottom:6px}
+  h3{font-size:15.5px;font-weight:700;color:var(--text);margin:0 0 4px}
+  p{color:var(--muted);margin-top:12px}
+  ul{margin:12px 0 0 20px;color:var(--muted)}
+  ul li{margin-top:7px}
+  ul li::marker{color:var(--gold)}
+  strong{color:var(--text);font-weight:650}
+
+  .grid{display:grid;gap:14px;margin-top:24px}
+  .g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+  @media(max-width:800px){.g3{grid-template-columns:1fr}}
+  @media(max-width:600px){.g2{grid-template-columns:1fr}}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+  .card p{font-size:14px;margin-top:6px}
+  .icon{width:36px;height:36px;border-radius:50%;background:rgba(234,199,79,.13);color:var(--gold);display:grid;place-items:center;font-size:15px;margin-bottom:12px}
+
+  .banner{
+    margin:30px 0 6px;padding:22px 24px;border-radius:var(--radius);
+    background:linear-gradient(135deg,rgba(234,199,79,.12),rgba(255,255,255,.03));
+    border:1px solid rgba(234,199,79,.20);
+  }
+  .banner p{margin-top:8px;font-size:15px}
+  .call{
+    display:inline-flex;align-items:center;gap:8px;margin-top:10px;
+    padding:12px 22px;border-radius:999px;font-size:15px;font-weight:600;
+    background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#0A0A0F;
+  }
+  .call:hover{text-decoration:none}
+
+  details{border:1px solid var(--border);border-radius:14px;background:var(--surface);padding:0 18px;margin-top:10px}
+  summary{cursor:pointer;list-style:none;padding:16px 0;font-weight:650;font-size:15px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--gold);font-size:20px;font-weight:400}
+  details[open] summary::after{content:"−"}
+  details p{padding:0 0 16px;font-size:14.5px}
+  details ol,details ul{margin:0 0 16px 20px}
+
+  .step{display:flex;gap:14px;margin-top:18px;align-items:flex-start}
+  .step b{
+    flex:none;width:28px;height:28px;border-radius:50%;
+    background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#0A0A0F;
+    display:grid;place-items:center;font-size:13px;font-weight:800;
+  }
+  .step div{color:var(--muted);font-size:14.5px}
+  .step div strong{display:block;color:var(--text);margin-bottom:2px}
+
+  footer{border-top:1px solid var(--border);padding:30px 0 44px;color:var(--faint);font-size:13px;margin-top:10px}
+  .foot{display:flex;flex-wrap:wrap;gap:12px 26px;justify-content:space-between;align-items:center}
+  .foot-links{display:flex;flex-wrap:wrap;gap:18px}
+  .foot-links a{color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand"><span class="brand-mark">V</span> XM Vaultfolio</div>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-hide">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <h1>Support</h1>
+    <p class="lede">XM Vaultfolio is a local-only app, which means there is no account to look up and no server log to inspect. Almost every question is answered by the information below — and every issue with your own records can be resolved on your device.</p>
+    <span class="stamp">Typical reply time: 1–2 business days</span>
+  </div>
+
+  <div class="banner">
+    <strong style="color:#fff;font-size:16px">Get in touch</strong>
+    <p>Describe what you expected, what happened instead, and which iPhone model and iOS version you are on. If a specific screen or number is involved, a screenshot helps enormously — and remember that screenshots leave the app, so please crop or redact anything you do not want to share.</p>
+    <a class="call" href="mailto:lueilwitzmarion1262000@gmail.com">lueilwitzmarion1262000@gmail.com</a>
+  </div>
+
+  <section>
+    <h2>Before you write</h2>
+    <p>These cover almost every case we hear about.</p>
+
+    <details>
+      <summary>Where is my data stored?</summary>
+      <p>On your device, in the app's private sandbox. Nothing is uploaded anywhere. Because of this, uninstalling the app deletes everything — there is no cloud copy we can restore from. If you are switching phones, export what you need first. See the <a href="privacy.html">Privacy Policy</a> for detail.</p>
+    </details>
+
+    <details>
+      <summary>Why don't my balances or totals match my bank?</summary>
+      <p>They can only match if your entries do. XM Vaultfolio does not connect to any institution — every amount, date, category, account, cost basis and current price is entered by you. Totals, percentages, budget pace and portfolio valuation are arithmetic applied to your input, so an incorrect entry produces an incorrect number. Please verify the source entries before relying on any figure.</p>
+    </details>
+
+    <details>
+      <summary>Do you fetch live market prices?</summary>
+      <p>No. Current prices for holdings are values you maintain yourself. The app computes cost basis, market value and unrealized P/L from those numbers. A valuation shown in the app is your personal record and may differ from a real-time quote by minutes, hours, or days.</p>
+    </details>
+
+    <details>
+      <summary>How do I move my data to a new phone?</summary>
+      <ol>
+        <li>On the old device, export or save the records you want to keep before removing the app.</li>
+        <li>Install XM Vaultfolio on the new device.</li>
+        <li>Re-enter your data there.</li>
+      </ol>
+      <p>There is no sync mechanism, so the two devices are always independent. We recommend keeping your own external backup of anything you would be upset to lose.</p>
+    </details>
+
+    <details>
+      <summary>Can I hide the amounts on screen?</summary>
+      <p>Yes. Go to <strong>Settings → Hide Amounts</strong>. Every monetary figure across the app is then replaced with dots, which is useful in public or when sharing your screen.</p>
+    </details>
+
+    <details>
+      <summary>The app asks for camera or photo access. Is that required?</summary>
+      <p>No, and it is only requested at the moment you choose to attach a receipt. If you decline, everything else works normally — you just cannot photograph or select an image. You can change the decision later in <strong>Settings → Privacy &amp; Security</strong>.</p>
+    </details>
+
+    <details>
+      <summary>Can I use another currency?</summary>
+      <p>Yes. <strong>Settings → Base Currency</strong> offers 14 currencies for all summaries and reports. Individual holdings can also carry their own currency, and amounts are shown accordingly.</p>
+    </details>
+
+    <details>
+      <summary>How do I delete everything?</summary>
+      <p><strong>Settings → Reset All Data</strong> erases every transaction, account, holding, budget, and receipt image held by the app, and restores the built-in categories. It is permanent and cannot be undone. Uninstalling the app has the same effect.</p>
+    </details>
+  </section>
+
+  <section>
+    <h2>Common questions by area</h2>
+
+    <h3 style="margin-top:26px">Dashboard and reports</h3>
+    <div class="grid g3">
+      <div class="card">
+        <div class="icon">◆</div>
+        <h3>Net worth looks wrong</h3>
+        <p>Net worth is assets minus liabilities, built from your account entries. Check that liability-type accounts are classified correctly and that opening balances reflect reality.</p>
+      </div>
+      <div class="card">
+        <div class="icon">◑</div>
+        <h3>Savings rate surprises me</h3>
+        <p>The rate is month-to-date income against month-to-date expense. Early in a month it moves sharply; mid-month readings are the meaningful ones.</p>
+      </div>
+      <div class="card">
+        <div class="icon">▤</div>
+        <h3>A chart segment looks empty</h3>
+        <p>Charts summarize only the current filter and selected range. Widen the date range or clear filters to see the full picture.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:30px">Transactions and receipts</h3>
+    <div class="grid g3">
+      <div class="card">
+        <div class="icon">≡</div>
+        <h3>Transfer shows as two entries</h3>
+        <p>By design. A transfer moves money out of one account and into another, so recording it as a transfer keeps both account balances correct instead of inflating income and expense.</p>
+      </div>
+      <div class="card">
+        <div class="icon">◎</div>
+        <h3>Search finds nothing</h3>
+        <p>Note search matches the text of the note field, not amounts, dates, or category names. Try a shorter or differently worded term.</p>
+      </div>
+      <div class="card">
+        <div class="icon">▣</div>
+        <h3>A receipt disappeared</h3>
+        <p>Images are removed along with the transaction they belong to, and by Reset All Data. Screenshots you saved to your own library are unaffected.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:30px">Budgets and portfolio</h3>
+    <div class="grid g3">
+      <div class="card">
+        <div class="icon">◔</div>
+        <h3>Budget pace looks too fast</h3>
+        <p>Pace is measured against elapsed time, not the whole month. Early-month spending always looks heavy. Confirm the budget period is monthly, weekly, or yearly as you intended.</p>
+      </div>
+      <div class="card">
+        <div class="icon">◔</div>
+        <h3>Unrealized P/L differs from my broker</h3>
+        <p>The app uses your average cost and your price, not your broker's cost-basis method, and it never fetches live quotes. Differences in method and in timing are expected.</p>
+      </div>
+      <div class="card">
+        <div class="icon">◔</div>
+        <h3>Can I trade from the app?</h3>
+        <p>No. There is no brokerage connection and no order entry anywhere in the app. XM Vaultfolio records positions you already own; it cannot buy, sell, send, or receive any asset.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Getting started</h2>
+    <p>A short setup sequence that gets the most out of the app.</p>
+
+    <div class="step"><b>1</b><div><strong>Review the disclaimer</strong>The first launch shows the journal framing and risk notice. Please read it before entering data.</div></div>
+    <div class="step"><b>2</b><div><strong>Set your base currency</strong>Settings → Base Currency. Every summary and report is denominated in this currency.</div></div>
+    <div class="step"><b>3</b><div><strong>Create your accounts</strong>More → Accounts. Add cash, bank, credit card, investment, and loan accounts, and enter accurate opening balances.</div></div>
+    <div class="step"><b>4</b><div><strong>Review categories</strong>More → Categories. Keep the built-in ones or rename and adjust them to match how you actually spend.</div></div>
+    <div class="step"><b>5</b><div><strong>Log recent activity</strong>Activity → add income, expense, and transfer entries. A month of real data is enough to make the dashboard meaningful.</div></div>
+    <div class="step"><b>6</b><div><strong>Add budgets, then holdings</strong>Set a cap per category, then record the positions you already own with quantity, average cost, and a current price.</div></div>
+  </section>
+
+  <section>
+    <h2>Still stuck?</h2>
+    <p>If the answer is not here, email us. Please include your iPhone model, your iOS version, the XM Vaultfolio version shown at the bottom of the Settings screen, and a description of what you expected versus what happened. If you are reporting a crash, the exact steps that trigger it are the single most useful thing you can send.</p>
+    <p>One honest limitation: because your records live only on your device and we cannot see them, we will usually ask you to describe the problem rather than inspect it. That is a direct consequence of the app collecting nothing — and we consider it the right trade-off.</p>
+    <a class="call" href="mailto:lueilwitzmarion1262000@gmail.com">Email support</a>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 XM Vaultfolio. All rights reserved.<br>Personal journal. Not investment advice.</div>
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="mailto:lueilwitzmarion1262000@gmail.com">lueilwitzmarion1262000@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
